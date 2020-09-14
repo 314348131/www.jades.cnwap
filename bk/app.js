@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-app.listen(10000);
+app.listen(10201);
 
 const cors = require("cors");
 
@@ -17,7 +17,6 @@ app.use(
     extended: false,
   })
 );
-
 app.use(
   cors({
     origin: ["http://127.0.0.1:8080", "http://localhost:8080"],
@@ -25,6 +24,7 @@ app.use(
 );
 
 app.use(express.static("public"));
+app.use(express.static("dist"));
 
 app.use("/user", userRouter);
 

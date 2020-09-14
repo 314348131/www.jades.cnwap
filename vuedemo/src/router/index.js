@@ -23,41 +23,55 @@ const routes = [
     path: "/shopping",
     name: "shopping",
     component: shopping,
+    meta: { grang: true },
+    component: () => import("../views/myshopping.vue"),
   },
   {
     path: "/login",
     name: "login",
     component: login,
+    component: () => import("../views/login.vue"),
   },
   {
     path: "/reg",
     name: "reg",
     component: reg,
+    component: () => import("../views/reg.vue"),
   },
   {
     path: "/store",
     name: "store",
     component: store,
+    meta: { grang: true },
+    component: () => import("../views/store.vue"),
   },
   {
     path: "/productsList",
     name: "myProductsList",
     component: myProductsList,
+    meta: { grang: true },
+    component: () => import("../views/myProductsList.vue"),
   },
   {
     path: "/search",
     name: "mySearch",
     component: mySearch,
+    meta: { grang: true },
+    component: () => import("../views/mySearch.vue"),
   },
   {
     path: "/productsdetails/:product_id",
     name: "ProductsDetails",
     component: ProductsDetails,
+    meta: { grang: true },
+    component: () => import("../views/ProductsDetails.vue"),
   },
   {
     path: "/products/:product_id",
     name: "Products",
     component: Products,
+    meta: { grang: true },
+    component: () => import("../views/Products.vue"),
   },
   {
     path: "/",
@@ -67,6 +81,7 @@ const routes = [
   {
     path: "/about",
     name: "About",
+    meta: { grang: true },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.

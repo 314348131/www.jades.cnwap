@@ -33,7 +33,7 @@ router.get("/productItme", (req, res) => {
       let mysql = `select * from ja_product where specification like "%${title}%"`;
       if (value == "desc") {
         mysql += `order by price desc`;
-        console.log("desc");
+       // console.log("desc");
       } else if (value == "asc") {
         mysql += `order by price asc`;
       } else if (value == "Hits") {

@@ -3,7 +3,7 @@
     <div class="regtop">
       <a href class="home" @click="$router.push('/')"></a>
       <span>会员登录</span>
-      <a class="login" href @click="$router.push('/reg')">注册</a>
+      <a class="login"  @click="$router.push('/reg')">注册</a>
     </div>
     <div class="form-box">
       <div>

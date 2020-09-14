@@ -12,8 +12,8 @@
         placeholder="请输入搜索关键词"
         fixed
       >
-        <template #left>
-          <img src="../assets/img/logo_r.png" width="24" alt />
+        <template #left-icon>
+          <img src="../assets/img/logo_r.png" width="20" alt />
         </template>
         <template #action>
           <van-icon name="chat-o" color="#fff" @click="$router.push('/store')">

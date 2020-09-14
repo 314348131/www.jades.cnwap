@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <router-view/>
-     <my-tabbar></my-tabbar>
+    <router-view />
+    <my-tabbar></my-tabbar>
+    <back-Top></back-Top>
   </div>
 </template>
 <script>
-import myTabbar from './components/myTabbar.vue';
+import backTop from "./components/backTop.vue";
+import myTabbar from "./components/myTabbar.vue";
 export default {
-  	components:{
-			myTabbar
-		},
-}
+  components: {
+    myTabbar,
+    backTop
+  }
+};
 </script>
 <style>
-	
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -33,7 +35,7 @@ export default {
 #nav a.router-link-exact-active {
   color: #42b983;
 }
-a{
-  color:#000;
+a {
+  color: #000;
 }
 </style>

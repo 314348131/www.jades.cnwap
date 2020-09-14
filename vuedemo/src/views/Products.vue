@@ -123,6 +123,7 @@ export default {
     changeAddr(picker) {
       //隐藏地址栏选项卡
       this.show = false;
+      this.resAddr = "";
       picker.forEach(element => {
         this.resAddr += " " + element.name + " ";
       });
